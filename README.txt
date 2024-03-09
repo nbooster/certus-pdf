@@ -1,9 +1,10 @@
-Many thanks to this lib author:
+Many thanks to these libs authors:
 https://github.com/galkahana/PDF-Writer
+https://github.com/RaymiiOrg/cpp-qr-to-png
 
-without it, this project could not be possible.
+without them, this project could not be possible.
 
-Creates one thread per input page...
+Creates one thread per input page... so have that in mind (possible to make that optional or dynamic).
 
 See the main.cpp example for usage (very simple).
 
@@ -118,3 +119,5 @@ Examples:
 "R, 5, 790, 215, 20, FF0000, 1, N"
 "C, 100, 100.5, 50.5, FF0000, 0.5, Y"
 "P, 00FF00, 1, N, 1, 1, 2, 2, 3, 3"
+
+The more complex the command the more time it takes (WUS takes the longest...)
