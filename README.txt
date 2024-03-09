@@ -15,6 +15,8 @@ and then inside it run: cmake .. && make
 and then go to the root folder and run the compilation command (Linux).
 Then run: ./main 
 
+Will to add cmake support fo the whole project...
+
 Copy-Paste command:
 
 g++ -O3 -L/home/notis/CertusPDF/libs/PDF-Writer-master/build/PDFWriter -L/home/notis/CertusPDF/libs/PDF-Writer-master/build/LibAesgm -L/home/notis/CertusPDF/libs/PDF-Writer-master/build/FreeType -L/home/notis/CertusPDF/libs/PDF-Writer-master/build/LibJpeg -L/home/notis/CertusPDF/libs/PDF-Writer-master/build/LibPng -L/home/notis/CertusPDF/libs/PDF-Writer-master/build/LibTiff -L/home/notis/CertusPDF/libs/PDF-Writer-master/build/Zlib -I/home/notis/CertusPDF/libs/PDF-Writer-master/FreeType/include -I/home/notis/CertusPDF/include main.cpp include/certusPDF.cpp include/QrToPng.cpp include/base64.cpp include/TinyPngOut.cpp include/QrCode.cpp include/pdfBuffer.cpp include/AnnotationsWriter.cpp include/helpers.cpp -o main -std=c++14 -Wall -Wextra -Wconversion -Wsign-conversion -Wshadow -Wpedantic -ffast-math -march=native -lPDFWriter -lLibAesgm -lFreeType -lLibJpeg -lLibPng -lLibTiff -lZlib -pthread
