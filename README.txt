@@ -1,7 +1,7 @@
 Many thanks to this lib author:
 https://github.com/galkahana/PDF-Writer
 
-which without it, this project could not be possible.
+without it, this project could not be possible.
 
 Creates one thread per input page...
 
