@@ -16,7 +16,10 @@ Many thanks to these libs authors:
 https://github.com/galkahana/PDF-Writer
 https://github.com/RaymiiOrg/cpp-qr-to-png
 
-without them, this project could not be possible.
+without them, this project could not be possible,
+and certusonline.com for sponsoring it.
+
+
 
 Creates one thread per input page... so have that in mind (possible to make that optional or dynamic).
 
