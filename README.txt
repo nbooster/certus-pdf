@@ -1,3 +1,8 @@
+This is an attempt to make pdf creation an easy, fast and language agnostic process.
+Ideal for server applications (run on multicore systems with NVMe drives) that need to generate pdf reports very frequently.
+Supports many commands for any basic (or rich especially with the help of images) pdf report with many more to be added and uppon requests or contributions.
+In a modern Linux server cloud environment it generates a 10 (or as many threads supported) page rich pdf report in 200 to 300 milliseconds (depends on the content and images size).
+
 Many thanks to these libs authors:
 https://github.com/galkahana/PDF-Writer
 https://github.com/RaymiiOrg/cpp-qr-to-png
@@ -122,5 +127,6 @@ Examples:
 "R, 5, 790, 215, 20, FF0000, 1, N"
 "C, 100, 100.5, 50.5, FF0000, 0.5, Y"
 "P, 00FF00, 1, N, 1, 1, 2, 2, 3, 3"
+"WUS"google.com", 10, 10, 50, 15, 000000, 0.9, 0358F0, 0.8, googleLink"
 
-The more complex the command the more time it takes (WUS takes the longest...)
+The more complex the command the more time it takes (WUS and commands with images take the longest...)
