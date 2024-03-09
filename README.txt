@@ -1,9 +1,18 @@
 This is an attempt to make pdf creation an easy, fast and language agnostic process.
+
 Ideal for server applications (run on multicore systems with NVMe drives) that need to generate pdf reports very frequently.
-Supports many commands for any basic (or rich especially with the help of images) pdf report with many more to be added and uppon requests or contributions.
-In a modern Linux server cloud environment it generates a 10 (or as many threads supported) page rich pdf report in 200 to 300 milliseconds (depends on the content and images size).
+
+Supports many commands for any basic (or rich especially with the help of images) 
+pdf report with many more to be added and uppon requests or contributions.
+
+In a modern Linux server cloud environment it generates a 10 (or as many threads supported by the underlying system) 
+page rich pdf report in 200 to 400 milliseconds (highly depends on the content and images size).
+
+*It also has a command for automatic qr-code image in a pdf page from a string input.
+
 
 Many thanks to these libs authors:
+
 https://github.com/galkahana/PDF-Writer
 https://github.com/RaymiiOrg/cpp-qr-to-png
 
@@ -13,6 +22,7 @@ Creates one thread per input page... so have that in mind (possible to make that
 
 See the main.cpp example for usage (very simple).
 
+
 Compile:
 
 Create a 'build' folder inside libs\PDF-Writer-master
@@ -21,6 +31,7 @@ and then go to the root folder and run the compilation command (Linux).
 Then run: ./main 
 
 Will to add cmake support fo the whole project...
+
 
 Copy-Paste command:
 
