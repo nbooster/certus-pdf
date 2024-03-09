@@ -50,7 +50,7 @@ g++ -O3
 main.cpp 
 include/certusPDF.cpp include/QrToPng.cpp include/base64.cpp include/TinyPngOut.cpp include/QrCode.cpp include/pdfBuffer.cpp include/AnnotationsWriter.cpp include/helpers.cpp 
 -o main -std=c++14 
--Wall -Wextra -Wconversion -Wsign-conversion -Wshadow -Wpedantic -ffast-math -march=native 
+-Wall -Wextra -Wconversion -Wsign-conversion -Wshadow -Wpedantic -march=native 
 -lPDFWriter -lLibAesgm -lFreeType -lLibJpeg -lLibPng -lLibTiff -lZlib -pthread
 
 Copy-Paste command:
