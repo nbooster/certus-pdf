@@ -17,7 +17,7 @@ https://github.com/galkahana/PDF-Writer
 https://github.com/RaymiiOrg/cpp-qr-to-png
 
 without them, this project could not be possible,
-and certusonline.com for sponsoring it.
+and https://certusonline.com for sponsoring it.
 
 
 
