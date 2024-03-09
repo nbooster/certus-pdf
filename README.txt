@@ -11,8 +11,9 @@ See the main.cpp example for usage (very simple).
 Compile:
 
 Create a 'build' folder inside libs\PDF-Writer-master
-and then run: cmake .. && make
+and then inside it run: cmake .. && make
 and then go to the root folder and run the compilation command (Linux).
+Then run: ./main 
 
 Copy-Paste command:
 
