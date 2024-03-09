@@ -6,7 +6,7 @@ Supports many commands for any basic (or rich especially with the help of images
 pdf report with many more to be added and uppon requests or contributions.
 
 In a modern Linux server cloud environment it generates a 10 (or as many threads supported by the underlying system) 
-page rich pdf report in 200 to 400 milliseconds (highly depends on the content and images size).
+page rich pdf report in 50 to 500 milliseconds (highly depends on the content and images size).
 
 *It also has a command for automatic qr-code image in a pdf page from a string input.
 
