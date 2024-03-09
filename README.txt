@@ -1,6 +1,17 @@
-Creates one thread per page...
+Many thanks to this lib author:
+https://github.com/galkahana/PDF-Writer
+
+which without it, this project could not be possible.
+
+Creates one thread per input page...
+
+See the main.cpp example for usage (very simple).
 
 Compile:
+
+Create a 'build' folder inside libs\PDF-Writer-master
+and then run: cmake .. && make
+and then go to the root folder and run the compilation command (Linux).
 
 Copy-Paste command:
 
