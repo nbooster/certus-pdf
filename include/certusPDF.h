@@ -9,7 +9,7 @@ namespace certusPDF
 	constexpr std::size_t textDelimiterStartPosition = 6;
 	constexpr std::size_t pointsDelimiterStartPosition = 4;
 
-	void createPDF
+	std::pair<bool, std::string> createPDF
 	(
 	    const std::vector<std::vector<std::string>>& inputPages,
 	    const std::string& fontFilePath,
