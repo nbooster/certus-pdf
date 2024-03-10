@@ -554,11 +554,9 @@ static void createAppendOnePagePDF
 
     InputByteArrayStream IBAS(pdfStreamBuffer.data(), static_cast<long long>(pdfStreamBuffer.size()));
     
-    finalPDFMutex.lock();
+    const std::lock_guard<std::mutex> lock(finalPDFMutex);
 
     appendPageWithAnnotationsToPDFStream(pdfWriterFinal, &IBAS);
-
-    finalPDFMutex.unlock();
 }
 
 void certusPDF::createPDF
