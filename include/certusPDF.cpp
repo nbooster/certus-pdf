@@ -559,7 +559,7 @@ static void createAppendOnePagePDF
     appendPageWithAnnotationsToPDFStream(pdfWriterFinal, &IBAS);
 }
 
-void certusPDF::createPDF
+std::pair<bool, std::string> certusPDF::createPDF
 (
     const std::vector<std::vector<std::string>>& inputPages,
     const std::string& fontFilePath,
@@ -568,18 +568,27 @@ void certusPDF::createPDF
     const int dimY
     )
 {
-    PDFWriter pdfWriterFinal;
+    try
+    {
+        PDFWriter pdfWriterFinal;
 
-    pdfWriterFinal.StartPDF(pdfFilePath, ePDFVersion13);
+        pdfWriterFinal.StartPDF(pdfFilePath, ePDFVersion13);
 
-    std::vector<std::thread> outPdfBuffers;
-    outPdfBuffers.reserve(inputPages.size());
+        std::vector<std::thread> outPdfBuffers;
+        outPdfBuffers.reserve(inputPages.size());
 
-    for (auto& inputPage : inputPages)
-        outPdfBuffers.push_back( std::thread{ createAppendOnePagePDF, std::ref(pdfWriterFinal), std::ref(inputPage), std::ref(fontFilePath), dimX, dimY } ); 
+        for (auto& inputPage : inputPages)
+            outPdfBuffers.push_back( std::thread{ createAppendOnePagePDF, std::ref(pdfWriterFinal), std::ref(inputPage), std::ref(fontFilePath), dimX, dimY } ); 
 
-    for (auto& outPdfBuffer : outPdfBuffers)
-        outPdfBuffer.join();
+        for (auto& outPdfBuffer : outPdfBuffers)
+            outPdfBuffer.join();
 
-    pdfWriterFinal.EndPDF();
+        pdfWriterFinal.EndPDF();
+
+        return { true, {} };
+    }
+    catch(const std::exception& e)
+    {
+        return { false, e.what() };
+    }
 }
