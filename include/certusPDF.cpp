@@ -80,7 +80,7 @@ static void writeText
 
     const auto doubleStartX = std::stod(startX);
     const auto doubleStartY = std::stod(startY);
-    const auto longFontSize = std::stol(fontSize);
+    const auto longFontSize = std::stoi(fontSize);
 
     bool dimensionsCalculated = false;
     
